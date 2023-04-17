@@ -1,13 +1,13 @@
 //print the value in screen
 function display(num){
-    document.getElementById('output').value += num;
+    document.getElementById('result').value += num;
 }
 
 //operations
 function calculate(){
     //try and catch come in pairs
     try{
-        document.getElementById("output").value = eval(document.getElementById("output").value);
+        document.getElementById("result").value = eval(document.getElementById("result").value);
     }
     catch(err){
         alert("Invalid")
@@ -16,19 +16,19 @@ function calculate(){
 
 //clear all the printed value from screen
 function Clear() {
-    var inp = document.getElementById('output');
+    var inp = document.getElementById('result');
     inp.value = '';
 }
 
 //delete
 function Back(){
-    var goBack = document.getElementById('output');
+    var goBack = document.getElementById('result');
     goBack.value = goBack.value.slice(0,-1);
 }
 function checkNumbers() {
     if (event.charCode >= 48 && event.charCode <= 57) {
     } else {
-        document.getElementById("output").value = ""
+        document.getElementById("result").value = ""
         alert("Only numbers are allowed")
         
     }

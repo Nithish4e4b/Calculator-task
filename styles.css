@@ -6,6 +6,15 @@
     font-family: sans-serif;
     outline: none;
 }
+#title {
+    color: orange;
+    text-align: center;
+
+}
+#description {
+    color: orange;
+    text-align: center;
+}
 
 .container{
     height: 75vh;
@@ -26,7 +35,7 @@
     background-color: grey;
     color: black;
 }
-.clr {
+#clear {
     background-color: grey;
     color: black;
 }
@@ -75,12 +84,12 @@ button{
     
 
 }
-.equal{
+#equal{
     background-color: orange;
     color: white;
     
 }
-.clr:hover{
+#clear:hover{
     background-color: rgb(206, 202, 202);
     box-shadow: none;
     transform: scale(1.2);
@@ -102,7 +111,7 @@ button{
     box-shadow: none;
     transform: scale(1.2);
 }
-.equal:hover{
+#equal:hover{
     background-color: white;
     color: orange;
     box-shadow: none;

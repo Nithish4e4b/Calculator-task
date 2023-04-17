@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:black;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    background-color:black;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px rgb(76, 76, 76),
+                      5px 5px 12px rgb(63, 63, 63);
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+}
+.row1 {
+    background-color: grey;
+    color: black;
+}
+.clr {
+    background-color: grey;
+    color: black;
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    box-shadow: inset -4px -4px 10px grey,
+                inset 4px 4px 10px rgb(110, 109, 110);
+    border: none;
+    border-radius: 25px;
+    background-color:grey;
+    color: black;
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color:grey;
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 20px;            
+}
+
+.zero{
+    grid-column: span 2;
+    width: 115px;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+.number{
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+.symbol{
+    background-color:orange;
+    color: white;
+    
+
+}
+.equal{
+    background-color: orange;
+    color: white;
+    
+}
+.clr:hover{
+    background-color: rgb(206, 202, 202);
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.number:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.row1:hover{
+    background-color: rgb(206, 202, 202);
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.symbol:hover{
+    background-color:white;
+    color: orange;
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.equal:hover{
+    background-color: white;
+    color: orange;
+    box-shadow: none;
+    transform: scale(1.2);
+}
